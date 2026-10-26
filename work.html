@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d12">
+  <title>作品詳細 | 末廣明幸</title>
+  <style>
+    :root{--bg:#f5fbff;--panel:rgba(255,255,255,.94);--text:#18354a;--muted:#68849a;--line:#d3e8f2;--lime:#078fc2;--cyan:#17afd2;font-family:Arial,"Noto Sans JP","Yu Gothic",sans-serif}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 10%,rgba(137,225,255,.23),transparent 30%),linear-gradient(180deg,#f7fcff,#eff9fd 58%,#f8fcff);color:var(--text);position:relative}body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(29,157,198,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(29,157,198,.045) 1px,transparent 1px);background-size:36px 36px}a{color:inherit;text-decoration:none}.wrap{width:min(1000px,calc(100% - 48px));margin:auto}header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{font-size:13px;font-weight:700;letter-spacing:.08em}.brand span{color:var(--lime)}.back{font-size:11px;color:var(--muted);letter-spacing:.12em}.back:hover{color:var(--lime)}main{padding:65px 0 100px}.eyebrow{font-size:10px;color:var(--lime);letter-spacing:.2em}.eyebrow:before{content:"";display:inline-block;width:23px;height:1px;background:var(--lime);vertical-align:middle;margin-right:12px}h1{font-size:clamp(34px,7vw,58px);letter-spacing:.07em;margin:18px 0 12px}.sub{color:var(--muted);font-size:12px;letter-spacing:.1em}.cover{height:350px;margin:38px 0 50px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid #a9d8e8;background:radial-gradient(ellipse at 50% 75%,#c5eff9,#f1fbff 68%);box-shadow:0 18px 45px rgba(44,144,177,.1)}.cover:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(32,159,197,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(32,159,197,.1) 1px,transparent 1px);background-size:30px 30px;transform:perspective(200px) rotateX(24deg) scale(1.3);transform-origin:bottom}.icon{z-index:1;color:var(--lime);font-size:86px;text-shadow:0 0 32px rgba(23,175,210,.3)}.cover-note{position:absolute;left:22px;bottom:18px;color:var(--muted);font-size:9px;letter-spacing:.16em}.layout{display:grid;grid-template-columns:1.4fr .8fr;gap:64px}.label{font-size:10px;color:var(--cyan);letter-spacing:.18em;text-transform:uppercase}.description{color:#587589;font-size:14px;line-height:2.1;margin:15px 0 32px}.block{border-top:1px solid var(--line);padding:22px 0}.block h2{font-size:14px;letter-spacing:.1em;margin:0 0 12px}.block p{font-size:12px;color:var(--muted);line-height:1.9;margin:0}.specs{margin:0;background:var(--panel);border:1px solid var(--line);padding:22px;box-shadow:0 10px 28px rgba(38,119,151,.06)}.specs h2{font-size:12px;letter-spacing:.15em;color:var(--lime);margin:0 0 16px}.spec{padding:14px 0;border-top:1px solid var(--line)}.spec dt{font-size:9px;color:var(--muted);letter-spacing:.12em;margin-bottom:7px}.spec dd{font-size:12px;margin:0;line-height:1.7}.notice{margin-top:18px;padding:13px;border-left:2px solid var(--lime);background:#e8f8fd;color:var(--muted);font-size:10px;line-height:1.8}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:9px;letter-spacing:.15em;display:flex;justify-content:space-between}@media(max-width:700px){.wrap{width:calc(100% - 38px)}main{padding:48px 0 70px}.cover{height:260px;margin:28px 0 35px}.layout{grid-template-columns:1fr;gap:28px}.specs{order:-1}footer{gap:12px;flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <header class="wrap"><a class="brand" href="index.html">AKIYUKI <span>SUEHIRO</span></a><a class="back" href="index.html#works">← BACK TO WORKS</a></header>
+  <main class="wrap">
+    <div class="eyebrow" id="category">GAME / PROJECT</div>
+    <h1 id="title">作品タイトル</h1>
+    <div class="sub" id="subtitle">制作作品の詳細</div>
+    <div class="cover"><span class="icon" id="icon">✦</span><span class="cover-note">PROJECT DETAIL　/　AKIYUKI SUEHIRO</span></div>
+    <div class="layout">
+      <div>
+        <div class="label">Overview</div>
+        <p class="description" id="description"></p>
+        <div class="block"><h2>制作について</h2><p id="about"></p></div>
+        <div class="block"><h2>担当・工夫した点</h2><p id="role"></p></div>
+      </div>
+      <aside>
+        <div class="specs"><h2>PROJECT DATA</h2>
+          <dl class="spec"><dt>ジャンル</dt><dd id="genre"></dd></dl>
+          <dl class="spec"><dt>制作期間</dt><dd id="period"></dd></dl>
+          <dl class="spec"><dt>使用技術</dt><dd id="tools"></dd></dl>
+          <dl class="spec"><dt>制作人数</dt><dd id="team"></dd></dl>
+        </div>
+        <div class="notice">このページは作品詳細のひな形です。作品名や説明、制作情報を実際の内容に書き換えてご利用ください。</div>
+      </aside>
+    </div>
+  </main>
+  <footer class="wrap"><span>© <span id="year">2026</span> AKIYUKI SUEHIRO</span><a href="index.html#works">作品一覧へ戻る ↑</a></footer>
+  <script>
+    const projects={
+      1:{title:'作品タイトル 01',subtitle:'ジャンル・ひとこと紹介を入力',icon:'✦',description:'この作品の概要を入力してください。どんなゲームなのか、どのような体験を目指して制作したのかを紹介します。',about:'制作のきっかけや、企画から完成までの流れを記入します。',role:'自分が担当した機能や、実装で工夫した点、技術的に挑戦したことを記入します。',genre:'ジャンルを入力',period:'制作期間を入力',tools:'使用した言語・ツールを入力',team:'人数・担当範囲を入力'},
+      2:{title:'作品タイトル 02',subtitle:'ジャンル・ひとこと紹介を入力',icon:'◈',description:'この作品の概要を入力してください。プレイヤーにどんな遊びを届けたいか、作品の特徴をまとめます。',about:'制作の背景や、チームでの進め方などを記入します。',role:'担当箇所や、難しかったことと解決方法を記入します。',genre:'ジャンルを入力',period:'制作期間を入力',tools:'使用した言語・ツールを入力',team:'人数・担当範囲を入力'},
+      3:{title:'作品タイトル 03',subtitle:'ジャンル・ひとこと紹介を入力',icon:'⌘',description:'この作品の概要を入力してください。ゲームのルールや、こだわったポイントを紹介します。',about:'制作の目的や、完成までに取り組んだことを記入します。',role:'実装した機能や、今後改善したい点を記入します。',genre:'ジャンルを入力',period:'制作期間を入力',tools:'使用した言語・ツールを入力',team:'人数・担当範囲を入力'}
+    };
+    const project=projects[new URLSearchParams(location.search).get('id')]||projects[1];
+    for(const key of Object.keys(project)){const node=document.getElementById(key);if(node)node.textContent=project[key]}
+    document.getElementById('year').textContent=new Date().getFullYear();document.title=project.title+' | 末廣明幸';
+  </script>
+</body>
+</html>
